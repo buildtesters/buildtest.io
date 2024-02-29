@@ -1,4 +1,6 @@
 title: Buildtest
 logo: /assets/logo/BuildTest_Primary_Center_3x1.png
-description: Minimal is a theme for GitHub Pages.
-theme: jekyll-theme-minimal
+description: Buildtest is a HPC Testing Framework for running acceptance tests on HPC systems
+remote_theme: pages-themes/leap-day@v0.2.0
+plugins:
+- jekyll-remote-theme
