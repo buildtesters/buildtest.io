@@ -4,3 +4,5 @@ description: Buildtest is a HPC Testing Framework for running acceptance tests o
 remote_theme: pages-themes/leap-day@v0.2.0
 plugins:
 - jekyll-remote-theme
+github:
+  slack_url: https://hpcbuildtest.slack.com/
