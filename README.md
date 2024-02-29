@@ -26,7 +26,16 @@ source $HOME/buildtest/setup.sh
 
 ## Features
 
-Buildtest 
+Buildtest commands with many features to help you build, run, and inspect tests. Below are some of the features:
+
+- Build and run tests from buildspecs
+- Support job submission to resource managers including Slurm, LSF, PBS and Cobalt 
+- Integration with environment modules and Lmod including CrayPE
+- Support for running tests in containers (Docker, Singularity, Podman)
+- Publish test results to CDASH
+- Query report file and filter or format output to find relevant information
+- Support for running tests in parallel
+- Multi test generation via compilers or executors
 
 ## Example Test
 
