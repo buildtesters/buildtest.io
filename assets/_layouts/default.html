@@ -23,7 +23,9 @@
       </header>
 
       <div id="banner">
-        <span id="logo"></span>
+        {% if site.logo %}
+          <img src="{{site.logo | relative_url}}" alt="Logo" />
+        {% endif %}
 
         <a href="{{ site.github.repository_url }}" class="button fork"><strong>View On GitHub</strong></a>
         <a href="{{ site.github.slack_url }}" class="button fork"><strong>Buildtest Slack</strong></a>
