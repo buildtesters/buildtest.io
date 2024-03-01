@@ -6,3 +6,4 @@ plugins:
 - jekyll-remote-theme
 github:
   slack_url: https://hpcbuildtest.slack.com/
+  repository_url: https://github.com/buildtesters/buildtest
