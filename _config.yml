@@ -21,7 +21,7 @@ title_separator          : "-"
 subtitle                 : ""
 name                     : ""
 description              : ""
-url                      : https://github.com/buildtesters/buildtest.io
+url                      : https://buildtesters.github.io/buildtest.io/
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : ""
@@ -101,7 +101,7 @@ social:
 analytics:
   provider               : "google"
   google:
-    tracking_id          :
+    tracking_id          : UA-101208306-1
     anonymize_ip         : # true, false (default)
 
 
@@ -135,15 +135,27 @@ analytics:
 # Site Footer
 footer:
   links:
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: https://github.com/buildtesters/buildtest
     - label: "Slack"
       icon: "fab fa-slack"
       url: "https://hpcbuildtest.slack.com"
+    - label: "Matrix"
+      icon: "fa fa-comments"
+      url:
     - label: "Docs"
       icon: "fas fa-book"
       url: https://buildtest.readthedocs.io/
+    - label: "Discussion"
+      icon: "fab fa-google"
+      url:
+    - label: "maintainers"
+      icon: "far fa-envelope"
+      url:
 #    - label: "GitLab"
 #      icon: "fab fa-fw fa-gitlab"
 #      # url:
