@@ -1,0 +1,31 @@
+---
+layout: home
+author_profile: false
+title: <img src="/favicon.ico" width="96"/> Buildtest
+excerpt: HPC Testing Framework for running acceptance tests.
+header:
+  overlay_image: /assets/images/perlmutter.jpeg
+  overlay_filter: .5
+  caption: "Photo: [**LBNL Perlmutter**](https://www.nersc.gov/systems/perlmutter/)"
+  actions:
+  - label: "<i class=\"fab fa-fw fa-github\"></i> GitHub"
+    url: "https://github.com/buildtesters/buildtest"
+  - label: "<i class=\"fab fa-slack\"></i> Slack"
+    url: "https://hpcbuildtest.slack.com"
+  - label: "<i class=\"fas fa-book\"></i> Docs"
+    url: "https://buildtest.readthedocs.io/"
+---
+
+{% capture markdown %}
+# Welcome to Buildtest!
+
+buildtest is a HPC testing framework that provides a flexible way to test software stack on HPC systems.
+buildtest is designed to be a generic framework that can be used to test any software stack. Test are written
+in [YAML](https://yaml.org/) format called **buildspecs** that is used to describe test configuration.
+buildtest will translate the configuration into a valid test script that can be executed on the system. The
+framework is implemented in Python and uses [JSON Schema](https://json-schema.org/) for validation of buildspecs.
+
+Learn more [here](/about/).  {% endcapture %}
+
+{{ markdown | markdownify }}
+
