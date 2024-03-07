@@ -1,0 +1,487 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>About Buildtest - Buildtest</title>
+<meta name="description" content="">
+
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Buildtest">
+<meta property="og:title" content="About Buildtest">
+<meta property="og:url" content="https://buildtesters.github.io/buildtest.io//about/">
+
+
+  <meta property="og:description" content="">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="https://buildtesters.github.io/buildtest.io//about/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "",
+      "url": "https://buildtesters.github.io/buildtest.io//"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Buildtest Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/buildtest-logo.png" alt="Buildtest"></a>
+        
+        <a class="site-title" href="/">
+          Buildtest
+          <span class="site-subtitle"></span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/references/">References</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="About Buildtest">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">About Buildtest
+</h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu"><li><a href="#what-is-buildtest">What is buildtest?</a></li><li><a href="#features">Features</a></li><li><a href="#example-test">Example Test</a></li><li><a href="#command-usage">Command Usage</a></li><li><a href="#example-output">Example Output</a></li><li><a href="#reporting-issues">Reporting Issues</a></li><li><a href="#get-involved">Get Involved!</a></li></ul>
+
+            </nav>
+          </aside>
+        
+        <h2 id="what-is-buildtest">What is buildtest?</h2>
+
+<p>buildtest is a HPC testing framework that provides a flexible way to test software stack on HPC systems. 
+buildtest is designed to be a generic framework that can be used to test any software stack. Test are written
+in YAML format called <strong>buildspecs</strong> that is used to describe test configuration. buildtest will translate the 
+configuration into a valid test script that can be executed on the system.</p>
+
+<h1 id="installation">Installation</h1>
+
+<p>Buildtest requires Python 3.8 or higher. You can <a href="https://www.python.org/downloads/">Install Python</a> or use 
+<a href="https://www.anaconda.com/">Anaconda</a> to manage python installation.</p>
+
+<p>Buildtest is simple to install, just clone the repo and source the setup script. We recommend you create a python
+virtual environment. Shown below are the instructions assuming you have cloned the repo in your home directory.</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="go">git clone https://github.com/buildtesters/buildtest.git
+</span><span class="gp">python3 -m venv $</span>HOME/.pyenv/buildtest
+<span class="gp">source $</span>HOME/.pyenv/buildtest/bin/activate
+<span class="gp">source $</span>HOME/buildtest/setup.sh</code></pre></figure>
+
+<h2 id="features">Features</h2>
+
+<p>Buildtest commands with many features to help you build, run, and inspect tests. Below are some of the features:</p>
+
+<ul>
+  <li>Build and run tests from buildspecs</li>
+  <li>Support job submission to resource managers including Slurm, LSF, PBS and Cobalt</li>
+  <li>Integration with environment modules and Lmod including CrayPE</li>
+  <li>Support for running tests in containers (Docker, Singularity, Podman)</li>
+  <li>Publish test results to CDASH</li>
+  <li>Query report file and filter or format output to find relevant information</li>
+  <li>Support for running tests in parallel</li>
+  <li>Multi test generation via compilers or executors</li>
+</ul>
+
+<h2 id="example-test">Example Test</h2>
+
+<p>An example test configuration can be shown below, typically a test will start off with declaration of <em>buildspecs</em> followed
+by name of test name <code class="language-plaintext highlighter-rouge">systemd_default_target</code>. The <code class="language-plaintext highlighter-rouge">executor</code> field is used to specify the executor to use to run the test.
+The <code class="language-plaintext highlighter-rouge">type</code> field is used to determine which schema type to use for validating schema. The <code class="language-plaintext highlighter-rouge">description</code> is used to provide
+a description of the test. The <code class="language-plaintext highlighter-rouge">run</code> field is used to provide the test script to run. The <code class="language-plaintext highlighter-rouge">tags</code> field is used to classify 
+so they can be run by a tagname.</p>
+
+<figure class="highlight"><pre><code class="language-yaml" data-lang="yaml">    <span class="na">buildspecs</span><span class="pi">:</span>
+      <span class="na">systemd_default_target</span><span class="pi">:</span>
+        <span class="na">executor</span><span class="pi">:</span> <span class="s">generic.local.bash</span>
+        <span class="na">type</span><span class="pi">:</span> <span class="s">script</span>
+        <span class="na">tags</span><span class="pi">:</span> <span class="pi">[</span><span class="nv">system</span><span class="pi">]</span>
+        <span class="na">description</span><span class="pi">:</span> <span class="s">check if default target is multi-user.target</span>
+        <span class="na">run</span><span class="pi">:</span> <span class="pi">|</span>
+          <span class="s">if [ "multi-user.target" == `systemctl get-default` ]; then</span>
+            <span class="s">echo "multi-user is the default target";</span>
+            <span class="s">exit 0</span>
+          <span class="s">fi</span>
+          <span class="s">echo "multi-user is not the default target";</span>
+          <span class="s">exit 1</span>
+    </code></pre></figure>
+
+<h2 id="command-usage">Command Usage</h2>
+
+<p>The <code class="language-plaintext highlighter-rouge">buildtest build</code> command is used to build test scripts from buildspecs. Typically
+one would specify path to file using <code class="language-plaintext highlighter-rouge">-b</code> option which can be used to specify a file or directory path.
+The <code class="language-plaintext highlighter-rouge">-b</code> option can be appended multiple times to specify multiple buildspecs.</p>
+
+<figure class="highlight"><pre><code class="language-bash" data-lang="bash">    <span class="c"># build a single buildspec</span>
+    <span class="nv">$ </span>buildtest build <span class="nt">-b</span> /path/to/buildspec.yaml
+
+    <span class="c"># build multiple buildspecs</span>
+    <span class="nv">$ </span>buildtest build <span class="nt">-b</span> /path/to/buildspec1.yaml <span class="nt">-b</span> /path/to/buildspec2.yaml
+
+    <span class="c"># build all buildspecs in a directory</span>
+    <span class="nv">$ </span>buildtest build <span class="nt">-b</span> /path/to/buildspecs
+
+    <span class="c"># buildtest by tagname</span>
+    <span class="nv">$ </span>buildtest build <span class="nt">--tags</span> system
+
+    <span class="c"># exclude buildspecs </span>
+    <span class="nv">$ </span>buildtest build <span class="nt">-b</span> /path/to/buildspecs/ <span class="nt">--exclude</span> /path/to/buildspecs/file1.yaml
+    
+    <span class="c"># buildtest by name</span>
+    <span class="nv">$ </span>buildtest build <span class="nt">--name</span> systemd_default_target</code></pre></figure>
+
+<h2 id="example-output">Example Output</h2>
+
+<p>Shown below a typical output of running a test using <code class="language-plaintext highlighter-rouge">buildtest build</code> command. You can see buildtest will 
+discover the buildspec, attempt to parse the buildspec, and then run the test. After the test is run, buildtest
+will summarize the test results and write the output to a report file.</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">(buildtest) spack@adf5079df74b:~/buildtest$</span><span class="w"> </span>buildtest build <span class="nt">-b</span> general_tests/configuration/systemd-default-target.yml 
+<span class="go">╭─────────────────────────────────────────────────── buildtest summary ───────────────────────────────────────────────────╮                                                                                                             
+│                                                                                                                         │                                                                                                             
+│ User:               spack                                                                                               │                                                                                                             
+│ Hostname:           adf5079df74b                                                                                        │                                                                                                             
+│ Platform:           Linux                                                                                               │                                                                                                             
+│ Current Time:       2024/02/29 20:07:35                                                                                 │                                                                                                             
+│ buildtest path:     /home/spack/buildtest/bin/buildtest                                                                 │                                                                                                             
+│ buildtest version:  1.8                                                                                                 │                                                                                                             
+│ python path:        /home/spack/pyenv/buildtest/bin/python3                                                             │                                                                                                             
+│ python version:     3.11.6                                                                                              │                                                                                                             
+│ Configuration File: /home/spack/buildtest/buildtest/settings/spack_container.yml                                        │                                                                                                             
+│ Test Directory:     /home/spack/runs                                                                                    │                                                                                                             
+│ Report File:        /home/spack/buildtest/var/report.json                                                               │                                                                                                             
+│ Command:            /home/spack/buildtest/bin/buildtest build -b general_tests/configuration/systemd-default-target.yml │                                                                                                             
+│                                                                                                                         │                                                                                                             
+╰─────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯                                                                                                             
+───────────────────────────────────────────────────────────────────────────────────────────────────────  Discovering Buildspecs ────────────────────────────────────────────────────────────────────────────────────────────────────────
+                             Discovered buildspecs                              
+╔══════════════════════════════════════════════════════════════════════════════╗
+║ buildspec                                                                    ║
+╟──────────────────────────────────────────────────────────────────────────────╢
+║ /home/spack/buildtest/general_tests/configuration/systemd-default-target.yml ║
+╟──────────────────────────────────────────────────────────────────────────────╢
+║ Total: 1                                                                     ║
+╚══════════════════════════════════════════════════════════════════════════════╝
+
+
+Total Discovered Buildspecs:  1
+Total Excluded Buildspecs:  0
+Detected Buildspecs after exclusion:  1
+────────────────────────────────────────────────────────────────────────────────────────────────────────── Parsing Buildspecs ──────────────────────────────────────────────────────────────────────────────────────────────────────────
+Valid Buildspecs: 1
+Invalid Buildspecs: 0
+/home/spack/buildtest/general_tests/configuration/systemd-default-target.yml: VALID
+Total builder objects created: 1
+                                                                                                 Builders by type=script                                                                                                  
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━┳━━━━━━━┳━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ builder                         ┃ type   ┃ executor           ┃ compiler ┃ nodes ┃ procs ┃ description                                  ┃ buildspecs                                                                   ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━╇━━━━━━━╇━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ systemd_default_target/1b413a0c │ script │ generic.local.bash │ None     │ None  │ None  │ check if default target is multi-user.target │ /home/spack/buildtest/general_tests/configuration/systemd-default-target.yml │
+└─────────────────────────────────┴────────┴────────────────────┴──────────┴───────┴───────┴──────────────────────────────────────────────┴──────────────────────────────────────────────────────────────────────────────┘
+──────────────────────────────────────────────────────────────────────────────────────────────────────────── Building Test ─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+systemd_default_target/1b413a0c: Creating Test Directory: /home/spack/runs/generic.local.bash/systemd-default-target/systemd_default_target/1b413a0c
+──────────────────────────────────────────────────────────────────────────────────────────────────────────── Running Tests ─────────────────────────────────────────────────────────────────────────────────────────────────────────────
+Spawning 8 processes for processing builders
+───────────────────────────────────────────────────────────────────────────────────────────────────────────── Iteration 1 ──────────────────────────────────────────────────────────────────────────────────────────────────────────────
+systemd_default_target/1b413a0c does not have any dependencies adding test to queue
+     Builders Eligible to Run      
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
+┃ Builder                         ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┩
+│ systemd_default_target/1b413a0c │
+└─────────────────────────────────┘
+systemd_default_target/1b413a0c: Current Working Directory : /home/spack/runs/generic.local.bash/systemd-default-target/systemd_default_target/1b413a0c/stage
+systemd_default_target/1b413a0c: Running Test via command: bash systemd_default_target_build.sh
+systemd_default_target/1b413a0c: failed to submit job with returncode: 1
+────────────────────────────────────────────────────────────────────────────────────────── Error Message for systemd_default_target/1b413a0c ───────────────────────────────────────────────────────────────────────────────────────────
+
+systemd_default_target/1b413a0c: Detected failure in running test, will attempt to retry test: 1 times
+systemd_default_target/1b413a0c: Run - 1/1
+systemd_default_target/1b413a0c: Running Test via command: bash systemd_default_target_build.sh
+systemd_default_target/1b413a0c: failed to submit job with returncode: 1
+systemd_default_target/1b413a0c: Test completed in 8.617189 seconds with returncode: 1
+systemd_default_target/1b413a0c: Writing output file -  /home/spack/runs/generic.local.bash/systemd-default-target/systemd_default_target/1b413a0c/systemd_default_target.out
+systemd_default_target/1b413a0c: Writing error file - /home/spack/runs/generic.local.bash/systemd-default-target/systemd_default_target/1b413a0c/systemd_default_target.err
+                                      Test Summary                                      
+┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━━━━━━━━━━━━━┳━━━━━━━━┳━━━━━━━━━━━━┳━━━━━━━━━┓
+┃ builder                         ┃ executor           ┃ status ┃ returncode ┃ runtime ┃
+┡━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━━━━━━━━━━━━━╇━━━━━━━━╇━━━━━━━━━━━━╇━━━━━━━━━┩
+│ systemd_default_target/1b413a0c │ generic.local.bash │ FAIL   │ 1          │ 8.617   │
+└─────────────────────────────────┴────────────────────┴────────┴────────────┴─────────┘
+
+
+
+Passed Tests: 0/1 Percentage: 0.000%
+Failed Tests: 1/1 Percentage: 100.000%
+
+
+Adding 1 test results to report file: /home/spack/buildtest/var/report.json
+Writing Logfile to /home/spack/buildtest/var/logs/buildtest_a99wl1r2.log</span></code></pre></figure>
+
+<p>Once test is complete you can view the output and error content using the <code class="language-plaintext highlighter-rouge">buildtest inspect query</code> command. This command will take an argument that is the name of the
+test in this case <code class="language-plaintext highlighter-rouge">systemd_default_target</code> is the name of test that was specified in the buildspec.</p>
+
+<p>A typical output would look something like this:</p>
+
+<figure class="highlight"><pre><code class="language-console" data-lang="console"><span class="gp">(buildtest) spack@adf5079df74b:~/buildtest$</span><span class="w"> </span>buildtest inspect query <span class="nt">-o</span> <span class="nt">-e</span> systemd_default_target
+<span class="go">───────────────────────────────────────────────────────────────────────────────────── systemd_default_target/3c14104c-6da6-4beb-afb0-f7c77494ee35 ──────────────────────────────────────────────────────────────────────────────────────
+Executor: generic.local.bash
+Description: check if default target is multi-user.target
+State: FAIL
+Returncode: 1
+Runtime: 8.196687 sec
+Starttime: 2024/02/29 20:09:09
+Endtime: 2024/02/29 20:09:17
+Command: bash systemd_default_target_build.sh
+Test Script: /home/spack/runs/generic.local.bash/systemd-default-target/systemd_default_target/3c14104c/systemd_default_target.sh
+Build Script: /home/spack/runs/generic.local.bash/systemd-default-target/systemd_default_target/3c14104c/systemd_default_target_build.sh
+Output File: /home/spack/runs/generic.local.bash/systemd-default-target/systemd_default_target/3c14104c/systemd_default_target.out
+Error File: /home/spack/runs/generic.local.bash/systemd-default-target/systemd_default_target/3c14104c/systemd_default_target.err
+Log File: /home/spack/buildtest/var/logs/buildtest_e8hctigl.log
+────────────────────────────────────────────────── Output File: /home/spack/runs/generic.local.bash/systemd-default-target/systemd_default_target/3c14104c/systemd_default_target.out ──────────────────────────────────────────────────
+</span><span class="gp">==&gt;</span><span class="w"> </span>Regenerating tcl module files                                                                                                                                                                                                       
+<span class="go">multi-user is not the default target                                                                                                                                                                                                    
+                                                                                                                                                                                                                                        
+────────────────────────────────────────────────── Error File: /home/spack/runs/generic.local.bash/systemd-default-target/systemd_default_target/3c14104c/systemd_default_target.err ───────────────────────────────────────────────────</span></code></pre></figure>
+
+<h2 id="reporting-issues">Reporting Issues</h2>
+
+<p>Please report all issues related to buildtest at <a href="https://github.com/buildtesters/buildtest/issues">https://github.com/buildtesters/buildtest/issues</a>. 
+You may consider posting your question in slack to see if someone can help you.</p>
+
+<h2 id="get-involved">Get Involved!</h2>
+
+<p>If you are interested in buildtest, join the <a href="https://buildtesters.slack.com">buildtest Slack</a> to get help. You can use the <a href="https://communityinviter.com/apps/hpcbuildtest/buildtest-slack-invitation">Join buildtest Slack</a> that
+will help you get access to Slack.</p>
+
+<p>We love to get your contribution! If you are a first time contributor then check out the
+<a href="https://buildtest.readthedocs.io/en/devel/contributing.html">buildtest contribution guide</a> for details on how to get started.</p>
+
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+          <li><a href="https://github.com/buildtesters/buildtest" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+          <li><a href="https://hpcbuildtest.slack.com" rel="nofollow noopener noreferrer"><i class="fab fa-slack" aria-hidden="true"></i> Slack</a></li>
+        
+      
+        
+      
+        
+          <li><a href="https://buildtest.readthedocs.io/" rel="nofollow noopener noreferrer"><i class="fas fa-book" aria-hidden="true"></i> Docs</a></li>
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 Buildtest. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+  <script>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', '']);
+  
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
